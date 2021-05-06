@@ -25,7 +25,7 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 # zad3
-# x = np.arange(0, 31, 0.1)
+# x = np.arange(0, 30, 0.1)
 # f = (np.sin(x))
 # g = np.cos(x)
 # plt.plot(x, f, x, g)
@@ -33,4 +33,16 @@ import matplotlib.pyplot as plt
 # plt.yticks(np.arange(-1, 2, step=0.5))
 # plt.xlabel('x')
 # plt.ylabel('wartości sin(x) i cos(x)')
+# plt.show()
+
+# zad4
+# x = np.arange(0, 30, 0.1)
+# f = np.sin(x)+2
+# g = -(np.sin(x))
+# plt.plot(x, f, x, g)
+# plt.yticks(np.arange(-1, 3.5, step=0.5))
+# plt.xlabel('x')
+# plt.ylabel('sin(x)')
+# plt.title('Wykres sin(x), sin(x)')
+# plt.legend(['sin(x)', 'sin(x)'], loc='center left')
 # plt.show()
