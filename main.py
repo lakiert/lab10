@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 # zad2
 x = np.arange(0, 21, 1)
 y = (1/x)
-plt.plot(x, y, label='f(x)')
+plt.plot(x, y, 'g>:', label='f(x) = 1/x')
 plt.xlabel('x')
 plt.ylabel('f(x)')
 plt.ylim(0, 1)
