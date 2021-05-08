@@ -2,6 +2,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+import xlrd
+import openpyxl
+
 # zad1
 # x = np.arange(0, 21, 1)
 # y = (1/x)
@@ -46,3 +49,23 @@ import matplotlib.pyplot as plt
 # plt.title('Wykres sin(x), sin(x)')
 # plt.legend(['sin(x)', 'sin(x)'], loc='center left')
 # plt.show()
+
+# zad5
+# df = pd.read_csv('iris.csv', names=['sepal len','sepal wid','petal len','petal wid', 'class'])
+# df = pd.DataFrame(df)
+# df = df[['sepal len','sepal wid', 'class']]
+# print(df)
+# # x = df['sepal len']
+# # y = df['sepal wid']
+# plt.xlabel('sepal length')
+# plt.ylabel('sepal width')
+# data = {'a': df['sepal len'],
+#         'b': df['sepal wid'],
+#         'c': np.random.randint(0, 150, 150)}
+# data['d'] = np.abs(data['a']-data['b'])
+# plt.scatter('a', 'b', c='c', s='d', data=data)
+# plt.title('Iris sepal length and width')
+# plt.show()
+
+
+
