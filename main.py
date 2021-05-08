@@ -67,5 +67,14 @@ import openpyxl
 # plt.title('Iris sepal length and width')
 # plt.show()
 
+# zad6
+excel = pd.ExcelFile('imiona.xlsx')
+df = pd.read_excel(excel, header=0)
+print(df)
 
-
+grupa1 = df.groupby(['Plec']).agg({'Liczba':['sum']})
+wykres = grupa1.plot.bar()
+plt.xlabel("Płeć")
+plt.ylabel("Liczba")
+plt.xticks(rotation=0)
+plt.show()
